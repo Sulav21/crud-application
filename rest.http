@@ -1,0 +1,46 @@
+###get automation
+GET http://localhost:8001/api/data
+
+###post automation
+POST http://localhost:8001/api/data
+Content-Type: application/json
+
+{
+    "itemCode":"123123",
+    "itemName":"sdsddsd",
+    "serialNumber":"sdafdsafdas1",
+    "coolAutomationCode":"asdfadsfds",
+    "customerName":"sdfdds",
+    "state":"sdaf",
+    "invoice":"DSafsda",
+    "trackingNumber":12312312312,
+     "comments": "dsdfjn akjsdfkldsn kljsdfkfllk"
+}
+
+    # "InvoiceDate":"2020/01/12",  
+    # "datePosted":null,
+###
+
+###post automation
+POST http://localhost:8001/api/data/update
+Content-Type: application/json
+
+{
+    "id":"62d00a684f1261614e2ad01a",
+    "itemCode":"Sulav",
+    "itemName":"Adhiakri",
+    "serialNumber":"sdafdsafdas1",
+    "coolAutomationCode":"asdfadsfds",
+    "customerName":"sdfdds",
+    "state":"sdaf",
+    "invoice":"DSafsda",
+    "trackingNumber":12312312312,
+     "comments": "dsdfjn akjsdfkldsn kljsdfkfllk"
+}
+
+DELETE http://localhost:8001/api/data/delete 
+Content-Type: application/json
+
+{
+    "id": "62cfe1343b2d39e8ba5dbd03"
+}
